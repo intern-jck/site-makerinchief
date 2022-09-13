@@ -173,8 +173,18 @@ module.exports = {
 add all to git repo
 
 ```bash
+git branch -M main
 git add .
 git commit -m 'first commit'
+```
+
+If you create a new repoe on GitHub, be sure to NOT create a readme or a gitignore file.
+It just complicates things during your first push.
+Make sure to add the origin of the new repo to this repo
+
+```bash
+git add origin https://github.com/["GITHUB_USER_NAME"]/["GITHUB_REPO_NAME"]
+git push origin main
 ```
 
 run dev
