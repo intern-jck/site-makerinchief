@@ -3,16 +3,27 @@ import Kit from './Kit/Kit.jsx';
 import KitCard from './KitCard/KitCard.jsx';
 import './Kits.css';
 
-import kitsData from './kitsInfo.json';
+// import kitsData from './kitsInfo.json';
+
+const KITS_DATA_URL = `http://127.0.0.1:3000`;
 
 const Kits = () => {
   const [view, setView] = useState('');
-  const [kits, setKits] = useState(kitsData);
-  const [kit, setKit] = useState(kitsData[0]);
+  const [kits, setKits] = useState();
+  const [kit, setKit] = useState();
+
+  const getKitsData = () => {
+    fetch('data/kitsInfo.json')
+      .then((response) => (response.json()))
+      .then((data) => {
+        setKits(data);
+        setKit(data[0]);
+      })
+      .catch((error) => (console.log('Error fetching Kits:', error)));
+  };
 
   useEffect(() => {
-    setKits(kitsData);
-    setKit(kitsData[0]);
+    getKitsData();
     setView('List');
   }, []);
 
@@ -41,7 +52,7 @@ const Kits = () => {
 
       <div className="kits-content">
         {
-          view === 'List' ?
+          view === 'List' && kits ?
             kits.map((kit, i) => (
               <KitCard
                 key={i}
@@ -49,7 +60,7 @@ const Kits = () => {
                 kit={kit}
                 viewHandler={viewKit} />
             )) :
-          view === 'Kit' ?
+          view === 'Kit' && kit?
             <Kit
               kit={kit}
               viewHandler={viewList} /> :

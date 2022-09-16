@@ -3,7 +3,7 @@ import KitCarousel from './KitCarousel/KitCarousel.jsx';
 import KitInfo from './KitInfo/KitInfo.jsx';
 import './Kit.css';
 
-const LOCAL_URL = 'http://127.0.0.1:8080/assets/media/';
+const LOCAL_URL = 'http://127.0.0.1:8080/media/';
 
 const Kit = ({kit, viewHandler}) => {
   return (

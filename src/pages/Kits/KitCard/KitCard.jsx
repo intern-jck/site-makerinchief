@@ -1,6 +1,6 @@
 import React from 'react';
 import './KitCard.css';
-const LOCAL_URL = 'http://127.0.0.1:8080/assets/media/';
+const LOCAL_URL = 'http://127.0.0.1:8080/media/';
 
 const KitCard = ({kitId, kit, viewHandler}) => {
   return (
