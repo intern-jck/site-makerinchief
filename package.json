@@ -1,7 +1,7 @@
 {
-  "name": "react-template-npm",
+  "name": "makerinchief-site",
   "version": "1.0.0",
-  "description": "## Recipe",
+  "description": "makerinchief site react app",
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode=development",
