@@ -1,11 +1,30 @@
+:root {
+  --nav-margin: 12vh;
+  --primary-color: black;
+  --secondary-color: blue;
+  --background-color: white;
+}
+
+body {
+  font-family: monospace;
+  font-size: 100%;
+}
+
 .App {
-  border: 4px solid black;
-  margin: auto;
-  margin-top: 4vh;
-  box-sizing: border-box;
-  width: 50vw;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+}
+
+.page-header {
+  font-size: x-large;
+  text-align: center;
+}
+
+@media screen and (orientation:landscape) and (max-width: 1024px){
+  :root {
+    --nav-margin: 30vh;
+  }
+}
+
+@media screen and (orientation:portrait) {
+
 }

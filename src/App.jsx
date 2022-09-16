@@ -1,14 +1,31 @@
-import React from 'react';
+import React from "react";
+import {Routes, Route} from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Home from './pages/Home/Home.jsx';
+import Kits from './pages/Kits/Kits.jsx';
+import Resources from './pages/Resources/Resources.jsx';
+import About from './pages/About/About.jsx';
+import Contact from './pages/Contact/Contact.jsx';
 import './App.css';
 
-const App = () =>{
-    return (
-      <div className='App'>
-        <h1>
-          React App with NPM
-        </h1>
-      </div>
-    )
+import {WindowProvider} from './hooks/WindowContext/WindowContext.js';
+
+const App = () => {
+  return (
+    <div className="App">
+      <WindowProvider>
+        <Navbar />
+      </WindowProvider>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path='/kits' element={<Kits />} />
+        <Route path='/resources' element={<Resources />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/*' element={<h1>404 Not Found!</h1>}/>
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

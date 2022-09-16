@@ -1,0 +1,58 @@
+.KitCard {
+  border: 4px solid black;
+  box-sizing: border-box;
+  width: 25vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kit-card-name {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.kit-card-img{
+  box-sizing: border-box;
+  width: 15vw;
+  height: 15vw;
+}
+
+.kit-card-img img {
+  cursor: pointer;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.kit-card-short {
+  font-size: x-large;
+}
+
+@media screen and (orientation:landscape) and (max-width: 1024px){
+  .KitCard {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .kit-card-img {
+    width: 25vw;
+    height: 25vw;
+  }
+
+}
+
+@media screen and (orientation:portrait) {
+  .KitCard {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .kit-card-img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+}

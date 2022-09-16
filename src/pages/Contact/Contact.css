@@ -1,0 +1,25 @@
+.Contact {
+  margin-top: var(--nav-margin);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+}
+
+@media screen and (orientation:landscape) and (max-width: 1024px){
+
+}
+
+@media screen and (orientation:portrait) {
+
+}

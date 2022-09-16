@@ -1,0 +1,78 @@
+.KitCarousel {
+  border: 4px solid black;
+  width: 40vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-img {
+  border: 4px solid black;
+  margin: 1em;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-img img {
+  object-fit: contain;
+}
+
+.carousel-indicator-div {
+  margin:auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.carousel-indicator {
+  border: 4px solid black;
+  width: 1em;
+  height: 1em;;
+}
+
+.carousel-indicator:hover {
+  transform: scale(1.2);
+  background-color: green;
+}
+
+.indicator-right-arrow {
+  color: black;
+}
+
+.indicator-left-arrow {
+  color: black;
+}
+
+.indicator-left-arrow:hover,
+.indicator-right-arrow:hover {
+  cursor: pointer;
+  color: green;
+  transform: scale(1.2);
+}
+
+@media screen and (orientation:landscape) and (max-width: 1024px) {
+  .KitCarousel {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  .KitCarousel {
+    width: 90vw;
+    height: 90vw;
+  }
+}
