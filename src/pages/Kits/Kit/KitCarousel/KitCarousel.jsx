@@ -38,8 +38,8 @@ const KitCarousel = ({ slides }) => {
 
       {
         currentImage ?
-          <div className={"carousel-content"}>
-            <div className="carousel-img">
+          <div className={"kit-carousel-content"}>
+            <div className="kit-carousel-img">
               <img
                 hidden={false}
                 src={currentImage} />
@@ -48,7 +48,7 @@ const KitCarousel = ({ slides }) => {
           : null
       }
 
-      <div className="carousel-indicator-div">
+      <div className="kit-carousel-indicator-div">
         { current > 0 ?
           <FaChevronLeft
             className="indicator-left-arrow onclick"
@@ -61,7 +61,7 @@ const KitCarousel = ({ slides }) => {
             // console.log(slide)
             return (
               <div
-                className="carousel-indicator"
+                className="kit-carousel-indicator"
                 key={index}
                 name={index}
                 onClick={updateCurrentImage}/>

@@ -1,11 +1,16 @@
-import React, {useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel.jsx';
 import './Home.css';
 
 const Home = () => {
+  const [projectSlides, setProjectSlides] = useState();
+
   useEffect(() => {
+    axios.get('/data/examples.json')
+      .then((response) => (setProjectSlides(response.data)))
+      .catch((error) => (console.log(`Error getting examples.json${error}`)));
 
   }, []);
 
@@ -16,9 +21,12 @@ const Home = () => {
         <h1>Makerinchief</h1>
       </div>
 
+      <h2>Projects From The Internet</h2>
       <div className='home-projects-carousel'>
-        <h2>Projects From The Internet</h2>
-        <Carousel />
+        {
+          projectSlides ?
+          <Carousel slides={projectSlides} /> : null
+        }
       </div>
 
       <div className="home-panel">

@@ -1,58 +1,65 @@
-{
-  "examples": [
-    {
-      "title": "HC-05 Bluetooth Module with Arduino-MIT App Inventor - YouTube",
-      "url": "https://www.youtube.com/watch?v=aQcJ4uHdQEA",
-      "img": "/media/yt-thumbs/youtube-arduino-bluetooth-0.jpg",
-      "tags": ["Arduino", "bluetooth"]
-    },
-    {
-      "title": "Using Servo Motors with Arduino - YouTube",
-      "url": "https://www.youtube.com/watch?v=kUHmYKWwuWs",
-      "img": "/media/yt-thumbs/youtube-arduino-servo-0.jpg",
-      "tags": ["Arduino", "servo motor"]
-    },
-    {
-      "title": "Arduino DC Motor Control Tutorial - L298N | H-Bridge | PWM | Robot Car -  YouTube",
-      "url": "https://www.youtube.com/watch?v=I7IFsQ4tQU8",
-      "img": "/media/yt-thumbs/youtube-arduino-dc motor-0.jpg",
-      "tags": ["Arduino", "dc motor"]
-    },
-    {
-      "title": "Raspberry Pi 3 Playing YouTube with Bluetooth Audio (A2DP) - YouTube",
-      "url": "https://www.youtube.com/watch?v=q7WHSxBW3M4",
-      "img": "/media/yt-thumbs/youtube-rasberry pi-bluetooth-0.jpg",
-      "tags": ["Raspberry Pi", "bluetooth"]
-    },
-    {
-      "title": "Raspberry Pi Servo Motor control - YouTube",
-      "url": "https://www.youtube.com/watch?v=HeTAmc_aT4g",
-      "img": "/media/yt-thumbs/youtube-rasberry pi-servo-0.jpg",
-      "tags": ["Raspberry Pi", "servo motor"]
-    },
-    {
-      "title": "DC Motor(L298) - Basic+Object Oriented | Raspberry Pi Tutorials for  Beginners (2020) - YouTube",
-      "url": "https://www.youtube.com/watch?v=Qp4wNdyC2Z0",
-      "img": "/media/yt-thumbs/youtube-rasberry pi-dc motor-0.jpg",
-      "tags": ["Raspberry Pi", "dc motor"]
-    },
-    {
-      "title": "Create A Bluetooth Scanner With Python - YouTube",
-      "url": "https://www.youtube.com/watch?v=0WkC0946ZPs",
-      "img": "/media/yt-thumbs/youtube-python-bluetooth-0.jpg",
-      "tags": ["Python", "bluetooth"]
-    },
-    {
-      "title": "Controlling Servo motor with Arduino and python - YouTube",
-      "url": "https://www.youtube.com/watch?v=tJaXkdNaCQw",
-      "img": "/media/yt-thumbs/youtube-python-servo-0.jpg",
-      "tags": ["Python", "servo motor"]
-    },
-    {
-      "title": "PYTHON (pySerial) + ARDUINO + DC MOTOR - YouTube",
-      "url": "https://www.youtube.com/watch?v=9xUVlkRJ1rU",
-      "img": "/media/yt-thumbs/youtube-python-dc motor-0.jpg",
-      "tags": ["Python", "dc motor"]
-    }
-  ]
-}
+[
+  {
+    "header": "",
+    "short": "HC-05 Bluetooth Module with Arduino-MIT App Inventor - YouTube",
+    "img": "/media/yt-thumbs/youtube-arduino-bluetooth-0.jpg",
+    "url": "https://www.youtube.com/watch?v=aQcJ4uHdQEA",
+    "tags": ["Arduino", "bluetooth"]
+  },
+  {
+    "header": "",
+    "short": "Using Servo Motors with Arduino - YouTube",
+    "img": "/media/yt-thumbs/youtube-arduino-servo-0.jpg",
+    "url": "https://www.youtube.com/watch?v=kUHmYKWwuWs",
+    "tags": ["Arduino", "servo motor"]
+  },
+  {
+    "header": "",
+    "short": "Arduino DC Motor Control Tutorial - L298N | H-Bridge | PWM | Robot Car -  YouTube",
+    "img": "/media/yt-thumbs/youtube-arduino-dc motor-0.jpg",
+    "url": "https://www.youtube.com/watch?v=I7IFsQ4tQU8",
+    "tags": ["Arduino", "dc motor"]
+  },
+  {
+    "header": "",
+    "short": "Raspberry Pi 3 Playing YouTube with Bluetooth Audio (A2DP) - YouTube",
+    "img": "/media/yt-thumbs/youtube-rasberry pi-bluetooth-0.jpg",
+    "url": "https://www.youtube.com/watch?v=q7WHSxBW3M4",
+    "tags": ["Raspberry Pi", "bluetooth"]
+  },
+  {
+    "header": "",
+    "short": "Raspberry Pi Servo Motor control - YouTube",
+    "img": "/media/yt-thumbs/youtube-rasberry pi-servo-0.jpg",
+    "url": "https://www.youtube.com/watch?v=HeTAmc_aT4g",
+    "tags": ["Raspberry Pi", "servo motor"]
+  },
+  {
+    "header": "",
+    "short": "DC Motor(L298) - Basic+Object Oriented | Raspberry Pi Tutorials for  Beginners (2020) - YouTube",
+    "img": "/media/yt-thumbs/youtube-rasberry pi-dc motor-0.jpg",
+    "url": "https://www.youtube.com/watch?v=Qp4wNdyC2Z0",
+    "tags": ["Raspberry Pi", "dc motor"]
+  },
+  {
+    "header": "",
+    "short": "Create A Bluetooth Scanner With Python - YouTube",
+    "img": "/media/yt-thumbs/youtube-python-bluetooth-0.jpg",
+    "url": "https://www.youtube.com/watch?v=0WkC0946ZPs",
+    "tags": ["Python", "bluetooth"]
+  },
+  {
+    "header": "",
+    "short": "Controlling Servo motor with Arduino and python - YouTube",
+    "img": "/media/yt-thumbs/youtube-python-servo-0.jpg",
+    "url": "https://www.youtube.com/watch?v=tJaXkdNaCQw",
+    "tags": ["Python", "servo motor"]
+  },
+  {
+    "header": "",
+    "short": "PYTHON (pySerial) + ARDUINO + DC MOTOR - YouTube",
+    "img": "/media/yt-thumbs/youtube-python-dc motor-0.jpg",
+    "url": "https://www.youtube.com/watch?v=9xUVlkRJ1rU",
+    "tags": ["Python", "dc motor"]
+  }
+]
