@@ -7,7 +7,7 @@ const KitCard = ({kitId, kit, viewHandler}) => {
     <div className='KitCard' onClick={viewHandler}>
       <h2 className='kit-card-name'>{kit.name}</h2>
       <div className='kit-card-img'>
-        <img src={`${LOCAL_URL}${kit.photos[0]}`} data-id={kitId}/>
+        <img src={kit.photos[0]} data-id={kitId}/>
       </div>
       <h3 className='kit-card-short'>{kit.short}</h3>
     </div>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronRight, FaChevronLeft, FaExpandArrowsAlt } from "react-icons/fa";
-import "./KitCarousel.css";
+import "./Carousel.css";
 
-const KitCarousel = ({ slides }) => {
+const Carousel = ({header, slides, short}) => {
+
   const [images, setImages] = useState([]);
   const [currentImage, setCurrentImage] = useState('');
   const [length, setLength] = useState(0);
@@ -27,14 +28,13 @@ const KitCarousel = ({ slides }) => {
 
   const updateCurrentImage = (event) => {
     event.preventDefault();
-    const target = event.target;
-    const name = target.name;
+    const {name} = event.target;
     setCurrent(name);
   };
 
   return (
 
-    <div className="KitCarousel">
+    <div className="Carousel">
 
       {
         currentImage ?
@@ -83,4 +83,4 @@ const KitCarousel = ({ slides }) => {
 
 };
 
-export default KitCarousel;
+export default Carousel;

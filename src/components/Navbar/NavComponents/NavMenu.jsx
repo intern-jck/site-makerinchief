@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import {GiHamburgerMenu, GoX} from 'react-icons/gi';
+import './NavComponents.css';
 
 const NavMenu = () => {
   return (

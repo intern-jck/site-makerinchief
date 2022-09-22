@@ -1,11 +1,8 @@
 import React, {useState, useEffect} from "react";
+import axios from 'axios';
 import Kit from './Kit/Kit.jsx';
 import KitCard from './KitCard/KitCard.jsx';
 import './Kits.css';
-
-// import kitsData from './kitsInfo.json';
-
-const KITS_DATA_URL = `http://127.0.0.1:3000`;
 
 const Kits = () => {
   const [view, setView] = useState('');
@@ -13,11 +10,10 @@ const Kits = () => {
   const [kit, setKit] = useState();
 
   const getKitsData = () => {
-    fetch('data/kitsInfo.json')
-      .then((response) => (response.json()))
-      .then((data) => {
-        setKits(data);
-        setKit(data[0]);
+    axios.get('data/kitsData.json')
+      .then((response) => {
+        setKits(response.data);
+        setKit(response.data[0]);
       })
       .catch((error) => (console.log('Error fetching Kits:', error)));
   };
@@ -60,7 +56,7 @@ const Kits = () => {
                 kit={kit}
                 viewHandler={viewKit} />
             )) :
-          view === 'Kit' && kit?
+          view === 'Kit' && kit ?
             <Kit
               kit={kit}
               viewHandler={viewList} /> :

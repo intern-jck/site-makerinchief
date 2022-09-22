@@ -1,24 +1,25 @@
-import React from "react";
+import React, {useEffect} from "react";
+import axios from 'axios';
 import {Link} from 'react-router-dom';
+import Carousel from '../../components/Carousel/Carousel.jsx';
 import './Home.css';
 
-import homeImg from './intern-bot.jpg';
-import kitsImg from './kits-img.jpg';
-import resourcesImg from './resources-img.png';
-
 const Home = () => {
+  useEffect(() => {
+
+  }, []);
+
   return (
     <div className="Home">
 
       <div className='page-header'>
         <h1>Makerinchief</h1>
-        <h2>Helping makers make</h2>
       </div>
 
-      {/* <div className='home-carousel'>
+      <div className='home-projects-carousel'>
         <h2>Projects From The Internet</h2>
-        <h3>CAROUSEL GOES HERE</h3>
-      </div> */}
+        <Carousel />
+      </div>
 
       <div className="home-panel">
 
@@ -26,7 +27,7 @@ const Home = () => {
           <h2>KITS</h2>
           <div className="home-panel-img">
             <Link to='/kits'>
-              <img src={kitsImg} />
+              {/* <img src={kitsImg} /> */}
             </Link>
           </div>
         </div>
@@ -35,11 +36,12 @@ const Home = () => {
           <h2>RESOURCES</h2>
           <div className="home-panel-img">
             <Link to='/resources'>
-              <img src={resourcesImg} />
+              {/* <img src={resourcesImg} /> */}
             </Link>
           </div>
         </div>
       </div>
+
     </div>
   )
 };

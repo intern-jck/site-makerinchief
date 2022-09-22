@@ -12,19 +12,21 @@ import {WindowProvider} from './hooks/WindowContext/WindowContext.js';
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <WindowProvider>
         <Navbar />
       </WindowProvider>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path='/kits' element={<Kits />} />
-        <Route path='/resources' element={<Resources />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/*' element={<h1>404 Not Found!</h1>}/>
-      </Routes>
-    </div>
+      <div className="App">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='/kits' element={<Kits />} />
+          <Route path='/resources' element={<Resources />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/*' element={<h1>404 Not Found!</h1>}/>
+        </Routes>
+      </div>
+    </>
   );
 }
 

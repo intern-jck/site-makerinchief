@@ -3,7 +3,7 @@ import {FaHome} from 'react-icons/fa';
 
 const NavHome = () => {
   return (
-    <a className='NavHome' href='/' target='_blank'>
+    <a className='NavHome' href='/'>
       <FaHome size={60} />
     </a>
   );
