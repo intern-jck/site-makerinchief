@@ -5,6 +5,7 @@
 
 .nav-collapse-header {
   border: 4px solid black;
+  height: 10vh;
   background-color: white;
   display: flex;
   flex-direction: row;

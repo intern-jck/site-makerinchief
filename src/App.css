@@ -1,0 +1,7 @@
+.App {
+  margin-top: var(--nav-margin);
+  /* border: 4px solid magenta; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

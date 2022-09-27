@@ -7,7 +7,6 @@
   --active-color: green;
 }
 
-
 /* Base */
 /* Use border box for everything.
   Makes it easier to style things when using borders. */
@@ -57,9 +56,6 @@ ul {
 }
 
 @media screen and (orientation:landscape) and (max-width: 1400px){
-  :root {
-    /* --nav-margin: 30vh; */
-  }
 }
 
 @media screen and (orientation:portrait) {
