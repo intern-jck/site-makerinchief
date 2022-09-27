@@ -1,0 +1,234 @@
+[
+    {
+        "name": "Tank Bot",
+        "link": "tank-bot",
+        "category": "meka-bot",
+        "github": "https://github.com/intern-jck/Tank-Bot",
+        "youtube": "https://www.youtube.com/watch?v=hO762uOHBdM",
+        "short": "Four wheeled drive bot",
+        "info": [
+            "The tank bot uses an Arduino Nano to control the 4 wheels via an L298N motor driver.  Parts are easy to come by and quick to setup.  3D printed connectors and wooden dowels make a strong structure.  Cardboard parts are laser cut to ensure accuracy."
+        ],
+        "tech": [
+            [
+                "Arduino Nano",
+                "https://www.arduino.cc/"
+            ],
+            [
+                "NRF24l01",
+                "#"
+            ],
+            [
+                "L298N",
+                "#"
+            ],
+            [
+                "3D Printing",
+                "#"
+            ],
+            [
+                "Laser Cut",
+                "#"
+            ]
+        ],
+        "photos": [
+            "https://iili.io/iAAp5B.jpg",
+            "https://iili.io/iAAmJV.jpg",
+            "https://iili.io/iAAZfj.jpg",
+            "https://iili.io/iAADUQ.jpg",
+            "https://iili.io/iAALib.jpg",
+            "https://iili.io/iAAt0x.jpg"
+        ]
+        },
+    {
+        "name": "Controller Bot",
+        "link": "controller-bot",
+        "category": "bot",
+        "github": "#",
+        "youtube": "#",
+        "short": "Two joystick controller",
+        "info": [
+            "The Controller Bot uses two joystick modules to control your bot using an NRF24L01 radio module.  An 16x2 LCD screen displays any data you want.  Parts are 3D printed using recycled PLA and laser cut from cardboard and wooden dowels."
+        ],
+        "tech": [
+            [
+                "Arduino Nano",
+                "https://www.arduino.cc/"
+            ],
+            [
+                "NRF24l01",
+                "#"
+            ],
+            [
+                "LCD",
+                "#"
+            ],
+            [
+                "3D Printing",
+                "#"
+            ],
+            [
+                "Laser Cut",
+                "#"
+            ]
+        ],
+        "photos": [
+            "https://iili.io/iARFqJ.jpg",
+            "https://iili.io/iARK0v.jpg",
+            "https://iili.io/iAR2sa.jpg",
+            "https://iili.io/iARdWg.jpg",
+            "https://iili.io/iARBJp.jpg",
+            "https://iili.io/iARC5N.jpg"
+        ]
+        },
+    {
+        "name": "LED Lantern",
+        "link": "led-lantern",
+        "category": "led",
+        "git-hub": "#",
+        "youtube": "#",
+        "short": "WS2812B RGB LED Lantern",
+        "info": [
+            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors."
+        ],
+        "tech": [
+            [
+                "Arduino Nano",
+                "https://www.arduino.cc/"
+            ],
+            [
+                "NRF24l01",
+                "#"
+            ],
+            [
+                "WS2812b",
+                "#"
+            ],
+            [
+                "Laser Cut",
+                "#"
+            ]
+        ],
+        "photos": [
+            "https://iili.io/iAR62R.png",
+            "https://iili.io/iARP7p.png",
+            "https://iili.io/iARrrv.png",
+            "https://iili.io/iARgEJ.png",
+            "https://iili.io/iARikN.png",
+            "https://iili.io/iARspI.png",
+            "https://iili.io/iARQIt.png"
+        ]
+    },
+    {
+        "name": "Doggo Bot",
+        "link": "doggo-bot",
+        "category": "meka-bots",
+        "git-hub": "#",
+        "youtube": "#",
+        "short": "WS2812B RGB LED Lantern",
+        "info": [
+            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors."
+        ],
+        "tech": [
+            [
+                "Arduino Nano",
+                "https://www.arduino.cc/"
+            ],
+            [
+                "NRF24l01",
+                "#"
+            ],
+            [
+                "WS2812b",
+                "#"
+            ],
+            [
+                "Laser Cut",
+                "#"
+            ]
+        ],
+        "photos": [
+            "https://iili.io/iAR5g4.jpg",
+            "https://iili.io/iARR1f.jpg",
+            "https://iili.io/iARAqG.jpg",
+            "https://iili.io/iARTss.jpg",
+            "https://iili.io/iARIXn.jpg",
+            "https://iili.io/iARzzX.jpg"
+        ]
+    },
+    {
+        "name": "Arm Bot",
+        "link": "led-lantern",
+        "category": "led",
+        "git-hub": "#",
+        "youtube": "#",
+        "short": "WS2812B RGB LED Lantern",
+        "info": [
+            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors."
+        ],
+        "tech": [
+            [
+                "Arduino Nano",
+                "https://www.arduino.cc/"
+            ],
+            [
+                "NRF24l01",
+                "#"
+            ],
+            [
+                "WS2812b",
+                "#"
+            ],
+            [
+                "Laser Cut",
+                "#"
+            ]
+        ],
+        "photos": [
+            "https://iili.io/iARVqb.jpg",
+            "https://iili.io/iARGLu.jpg",
+            "https://iili.io/iARlm7.jpg",
+            "https://iili.io/iARceS.jpg",
+            "https://iili.io/iAR1I9.jpg",
+            "https://iili.io/iAREXe.jpg"
+        ]
+    },
+    {
+        "name": "Digit Display",
+        "link": "led-lantern",
+        "category": "led",
+        "git-hub": "#",
+        "youtube": "#",
+        "short": "WS2812B RGB LED Lantern",
+        "info": [
+            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors."
+        ],
+        "tech": [
+            [
+                "Arduino Nano",
+                "https://www.arduino.cc/"
+            ],
+            [
+                "NRF24l01",
+                "#"
+            ],
+            [
+                "WS2812b",
+                "#"
+            ],
+            [
+                "Laser Cut",
+                "#"
+            ]
+        ],
+        "photos": [
+            "https://iili.io/iA5Jv2.png",
+            "https://iili.io/iA5HYl.png",
+            "https://iili.io/iA5924.png",
+            "https://iili.io/iARtQn.png",
+            "https://iili.io/iARbBs.png",
+            "https://iili.io/iARp4f.png",
+            "https://iili.io/iARmEG.png"
+        ]
+    }
+]

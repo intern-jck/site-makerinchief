@@ -1,7 +1,7 @@
 {
-  "name": "react-template-npm",
+  "name": "site-makerinchief",
   "version": "1.0.0",
-  "description": "## Recipe",
+  "description": "Website for Makerinchief",
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode=development",
@@ -27,7 +27,11 @@
     "webpack-dev-server": "^4.11.0"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router": "^6.4.1",
+    "react-router-dom": "^6.4.1"
   }
 }

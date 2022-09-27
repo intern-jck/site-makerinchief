@@ -1,0 +1,115 @@
+.Carousel {
+  border: 4px solid black;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-header {
+  border: 4px solid blue;
+}
+
+.carousel-content {
+  border: 4px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-img {
+  border: 4px solid green;
+  width: 80%;
+  height: 40%;
+}
+
+.carousel-img img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-short {
+  border: 4px solid blue;
+  width: fit-content;
+}
+
+.carousel-controls {
+  border: 4px solid blue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-right-arrow {
+  border: 4px solid green;
+  color: black;
+  /* min-width: 3em; */
+  margin-right: 1em;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-left-arrow {
+  border: 4px solid green;
+  color: black;
+  /* min-width: 3em; */
+  margin-left: 1em;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-left-arrow:hover,
+.carousel-right-arrow:hover {
+  cursor: pointer;
+  color: green;
+  transform: scale(1.2);
+}
+
+
+.carousel-indicator-div {
+  border: 4px solid blue;
+  margin:auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.carousel-indicator {
+  /* border: 4px solid black; */
+  width: 1em;
+  height: 1em;;
+}
+
+.carousel-indicator:hover {
+  transform: scale(1.2);
+  background-color: green;
+}
+
+
+
+
+@media screen and (orientation:landscape) and (max-width: 1400px) {
+  .Carousel {
+  }
+}
+
+@media screen and (orientation:portrait) {
+  .Carousel {
+  }
+}
