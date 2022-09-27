@@ -1,12 +1,13 @@
 .Carousel {
-  border: 4px solid black;
+  border: 4px solid orange;
   padding: 1em;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 1em;
 }
 
 .carousel-header {
@@ -23,8 +24,8 @@
 
 .carousel-img {
   border: 4px solid green;
-  width: 80%;
-  height: 40%;
+  width: 40%;
+  height: 10vh;
 }
 
 .carousel-img img {
@@ -100,9 +101,6 @@
   transform: scale(1.2);
   background-color: green;
 }
-
-
-
 
 @media screen and (orientation:landscape) and (max-width: 1400px) {
   .Carousel {

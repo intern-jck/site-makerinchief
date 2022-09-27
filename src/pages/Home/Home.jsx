@@ -21,8 +21,10 @@ const Home = () => {
         <h1>Makerinchief</h1>
       </div>
 
-      <h2>Projects From The Internet</h2>
-      <div className='home-projects-carousel'>
+      <div className='home-carousel'>
+        <div className='home-carousel-header'>
+            <h2>Projects From The Internet</h2>
+        </div>
         {
           projectSlides ?
           <Carousel slides={projectSlides} /> : null
@@ -30,7 +32,6 @@ const Home = () => {
       </div>
 
       <div className="home-panel">
-
         <div className="home-panel-item">
           <h2>KITS</h2>
           <div className="home-panel-img">
@@ -39,7 +40,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
         <div className="home-panel-item">
           <h2>RESOURCES</h2>
           <div className="home-panel-img">

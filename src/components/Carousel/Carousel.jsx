@@ -34,7 +34,7 @@ const Carousel = ({slides}) => {
 
     <div className="Carousel">
 
-      <div className={"carousel-content"}>
+      <div className='carousel-content'>
         <div className='carousel-header'>
           <h3>HEADER GOES HERE</h3>
         </div>
