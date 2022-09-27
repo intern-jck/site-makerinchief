@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* For page wide styling */
 :root {
   --nav-margin: 12vh;
@@ -63,4 +64,9 @@ ul {
 }
 
 @media screen and (orientation:portrait) {
+=======
+body {
+  margin: 0;
+  font-size: 100%;
+>>>>>>> a10a8c5a8a5a8edc74f8ea12b323a1219128a32c
 }
