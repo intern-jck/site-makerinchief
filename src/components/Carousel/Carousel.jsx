@@ -3,8 +3,6 @@ import { FaChevronRight, FaChevronLeft, FaExpandArrowsAlt } from "react-icons/fa
 import "./Carousel.css";
 
 const Carousel = ({slides}) => {
-  console.log(slides)
-
   const [current, setCurrent] = useState(0);
   const [length, setLength] = useState(slides.length);
 

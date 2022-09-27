@@ -4,6 +4,10 @@ import {Link} from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel.jsx';
 import './Home.css';
 
+const kitsImg = 'https://iili.io/sbJOmu.jpg';
+const resourcesImg = 'https://iili.io/sbJw79.png';
+
+
 const Home = () => {
   const [projectSlides, setProjectSlides] = useState();
 
@@ -36,7 +40,7 @@ const Home = () => {
           <h2>KITS</h2>
           <div className="home-panel-img">
             <Link to='/kits'>
-              {/* <img src={kitsImg} /> */}
+              <img src={kitsImg} />
             </Link>
           </div>
         </div>
@@ -44,7 +48,7 @@ const Home = () => {
           <h2>RESOURCES</h2>
           <div className="home-panel-img">
             <Link to='/resources'>
-              {/* <img src={resourcesImg} /> */}
+              <img src={resourcesImg} />
             </Link>
           </div>
         </div>

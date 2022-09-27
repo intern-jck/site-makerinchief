@@ -1,31 +1,34 @@
 .Carousel {
-  border: 4px solid orange;
+  /* border: 4px solid orange; */
   padding: 1em;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  /* align-items: center; */
+  align-items: center;
   gap: 1em;
 }
 
 .carousel-header {
-  border: 4px solid blue;
+  /* border: 4px solid blue; */
 }
 
 .carousel-content {
-  border: 4px solid blue;
+  border: 4px solid black;
+  width: 60%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .carousel-img {
-  border: 4px solid green;
-  width: 40%;
-  height: 10vh;
+  border: 4px solid black;
+  padding: 4px;
+  max-width: 80%;
+  max-height: 60%;
 }
 
 .carousel-img img {
@@ -35,13 +38,14 @@
 }
 
 .carousel-short {
-  border: 4px solid blue;
+  /* border: 4px solid blue; */
   width: fit-content;
 }
 
 .carousel-controls {
   border: 4px solid blue;
-  width: 100%;
+  padding: 1em;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,7 +53,7 @@
 }
 
 .carousel-right-arrow {
-  border: 4px solid green;
+  /* border: 4px solid green; */
   color: black;
   /* min-width: 3em; */
   margin-right: 1em;
@@ -61,7 +65,7 @@
 }
 
 .carousel-left-arrow {
-  border: 4px solid green;
+  /* border: 4px solid green; */
   color: black;
   /* min-width: 3em; */
   margin-left: 1em;
@@ -81,9 +85,9 @@
 
 
 .carousel-indicator-div {
-  border: 4px solid blue;
+  border: 4px solid green;
   margin:auto;
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -103,11 +107,7 @@
 }
 
 @media screen and (orientation:landscape) and (max-width: 1400px) {
-  .Carousel {
-  }
 }
 
 @media screen and (orientation:portrait) {
-  .Carousel {
-  }
 }
