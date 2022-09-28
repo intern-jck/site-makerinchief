@@ -5,7 +5,6 @@ import "./Carousel.css";
 const Carousel = ({slides}) => {
   const [current, setCurrent] = useState(0);
   const [length, setLength] = useState(slides.length);
-
   const [images, setImages] = useState([]);
   const [text, setText] = useState({header: '', short: ''});
   const [tags, setTags] = useState([]);
@@ -13,13 +12,12 @@ const Carousel = ({slides}) => {
   useEffect(() => {
   }, []);
 
-
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? length - 1 : current + 1);
+    setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? 0 : current - 1);
+    setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
   const updateCurrentImage = (event) => {
@@ -31,57 +29,57 @@ const Carousel = ({slides}) => {
   return (
 
     <div className="Carousel">
-
       <div className='carousel-content'>
-        <div className='carousel-header'>
-          <h3>HEADER GOES HERE</h3>
+        <div className='carousel-body'>
+          <div className='carousel-header'>
+            {slides[current].header}
+          </div>
+          <div className='carousel-img'>
+            <a href={slides[current].url} target='_blank'>
+              <img
+                hidden={false}
+                src={slides[current].img} />
+            </a>
+          </div>
+          <div className='carousel-short'>
+            {slides[current].short}
+          </div>
         </div>
-        <div className="carousel-img">
-          {/* {current} */}
-          <img
-            hidden={false}
-            src={slides[current].img} />
-        </div>
-        <div className='carousel-short'>
-          {slides[current].short}
-        </div>
-      </div>
 
-      <div className='carousel-controls'>
-        <div className="carousel-left-arrow">
-          {
-            current > 0 ?
+        <div className='carousel-controls'>
+          <div className="carousel-left-arrow">
+            {
             <FaChevronLeft
               onClick={prevSlide}
-              size={40}/>
-            : null
-          }
-        </div>
-        <div className="carousel-right-arrow">
-          {
-            current >= 0 && current != length - 1?
+              size={80}/>
+            }
+          </div>
+          <div className="carousel-right-arrow">
+            {
             <FaChevronRight
               onClick={nextSlide}
-              size={40}/>
+              size={80}/>
+            }
+          </div>
+        </div>
+
+        {/* <div className="carousel-indicator-div">
+          {
+            images ? images.map((slide, index) => {
+              return (
+                <div
+                  className="carousel-indicator"
+                  key={index}
+                  name={index}
+                  onClick={updateCurrentImage}/>
+                )
+              })
             : null
           }
-        </div>
+        </div> */}
       </div>
 
-      {/* <div className="carousel-indicator-div">
-        {
-          images ? images.map((slide, index) => {
-            return (
-              <div
-                className="carousel-indicator"
-                key={index}
-                name={index}
-                onClick={updateCurrentImage}/>
-              )
-            })
-          : null
-        }
-      </div> */}
+
 
     </div>
   );
