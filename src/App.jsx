@@ -7,7 +7,6 @@ import Resources from './pages/Resources/Resources.jsx';
 import About from './pages/About/About.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import './App.css';
-
 import {WindowProvider} from './hooks/WindowContext/WindowContext.js';
 
 const App = () => {
