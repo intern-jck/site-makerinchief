@@ -53,7 +53,7 @@ const KitCarousel = ({ slides }) => {
           <FaChevronLeft
             className="indicator-left-arrow onclick"
             onClick={prevSlide}
-            size={40}/>
+            size={60}/>
           : null
         }
         {
@@ -64,7 +64,8 @@ const KitCarousel = ({ slides }) => {
                 className="kit-carousel-indicator"
                 key={index}
                 name={index}
-                onClick={updateCurrentImage}/>
+                // onClick={updateCurrentImage}
+                />
               )
             })
           : null
@@ -73,7 +74,7 @@ const KitCarousel = ({ slides }) => {
           <FaChevronRight
             className="indicator-right-arrow onclick"
             onClick={nextSlide}
-            size={40}/>
+            size={60}/>
           : null
         }
       </div>

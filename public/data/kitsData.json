@@ -27,7 +27,7 @@
                 "#"
             ],
             [
-                "Laser Cut",
+                "Laser Cutting",
                 "#"
             ]
         ],
@@ -68,7 +68,7 @@
                 "#"
             ],
             [
-                "Laser Cut",
+                "Laser Cutting",
                 "#"
             ]
         ],
@@ -89,7 +89,7 @@
         "youtube": "#",
         "short": "WS2812B RGB LED Lantern",
         "info": [
-            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors."
+            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors.  Printer paper is used as a simple diffuser which also allows printing images on each side allowing for very intersting visual effects!"
         ],
         "tech": [
             [
@@ -105,7 +105,7 @@
                 "#"
             ],
             [
-                "Laser Cut",
+                "Laser Cutting",
                 "#"
             ]
         ],
@@ -125,9 +125,9 @@
         "category": "meka-bots",
         "git-hub": "#",
         "youtube": "#",
-        "short": "WS2812B RGB LED Lantern",
+        "short": "4 legged walking bot",
         "info": [
-            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors."
+            "The Doggo Bot uses a simple leg mechanism and 4 servos controlled by an Arduino Nano to allow the bot to walk forward and backwards.  There is plenty of room to attach sensors and devices to let the bot detect objects and even be remote controlled!"
         ],
         "tech": [
             [
@@ -135,15 +135,15 @@
                 "https://www.arduino.cc/"
             ],
             [
-                "NRF24l01",
+                "Servo Motors",
                 "#"
             ],
             [
-                "WS2812b",
+                "3D Printing",
                 "#"
             ],
             [
-                "Laser Cut",
+                "Laser Cutting",
                 "#"
             ]
         ],
@@ -158,13 +158,13 @@
     },
     {
         "name": "Arm Bot",
-        "link": "led-lantern",
-        "category": "led",
+        "link": "arm-bot",
+        "category": "meka-bots",
         "git-hub": "#",
         "youtube": "#",
-        "short": "WS2812B RGB LED Lantern",
+        "short": "Servo powered robot arm",
         "info": [
-            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors."
+            "Arm Bot uses a combination of servos and 3D printed parts to allow the arm to grip small objects and perform simple movements.  The bot is simple to control using three potentiometers are used to control base, elbow and gripper of the arm.  ."
         ],
         "tech": [
             [
@@ -172,15 +172,15 @@
                 "https://www.arduino.cc/"
             ],
             [
-                "NRF24l01",
+                "Servo Motors",
                 "#"
             ],
             [
-                "WS2812b",
+                "3D Prining",
                 "#"
             ],
             [
-                "Laser Cut",
+                "Laser Cutting",
                 "#"
             ]
         ],
@@ -195,13 +195,13 @@
     },
     {
         "name": "Digit Display",
-        "link": "led-lantern",
+        "link": "digit-display",
         "category": "led",
         "git-hub": "#",
         "youtube": "#",
-        "short": "WS2812B RGB LED Lantern",
+        "short": "A 7 segment WS2812b display",
         "info": [
-            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors."
+            "The Digit Display is a fun LED project meant to a great start to learn soldering and programming control of LEDs.  The LEDs can be programmed to display any single digit number and in a wide range of colors.  The displays can also be chained together to create larger displays."
         ],
         "tech": [
             [
@@ -209,7 +209,7 @@
                 "https://www.arduino.cc/"
             ],
             [
-                "NRF24l01",
+                "PCB",
                 "#"
             ],
             [
@@ -217,7 +217,7 @@
                 "#"
             ],
             [
-                "Laser Cut",
+                "3D Printing",
                 "#"
             ]
         ],

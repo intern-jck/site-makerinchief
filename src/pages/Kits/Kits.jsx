@@ -27,8 +27,10 @@ const Kits = () => {
     event.preventDefault();
     const {name} = event.target;
     const id = event.target.getAttribute('data-id');
-    setKit(kits[id]);
-    setView('Kit');
+    if (id) {
+      setKit(kits[id]);
+      setView('Kit');
+    }
   };
 
   const viewList = (event) => {
@@ -44,6 +46,10 @@ const Kits = () => {
 
       <div className='page-header'>
         <h1>Kits</h1>
+        <h2>The kits below are meant to be educational kits for beginners learning programming and robotics.</h2>
+        <h2>The kits will be open source and parts available for download.</h2>
+        <h2>I will update this page once I have all the files tested and ready to go so stay tuned!</h2>
+        <h2>Also, full kits will be available for purchase soon!</h2>
       </div>
 
       <div className="kits-content">
@@ -63,6 +69,7 @@ const Kits = () => {
             null
         }
       </div>
+
     </div>
   )
 };

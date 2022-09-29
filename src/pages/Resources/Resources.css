@@ -1,5 +1,4 @@
 .Resources {
-  margin-top: var(--nav-margin);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -9,11 +8,29 @@
 .resources-content {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   gap: 4em;
+}
+
+.resource-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.resource-img-container {
+  width: 100%;
+}
+
+.resource-img-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (orientation:landscape) and (max-width: 1024px){
