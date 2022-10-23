@@ -9,8 +9,10 @@ const resourcesImg = 'https://iili.io/sbJw79.png';
 
 const Home = () => {
   const [projectSlides, setProjectSlides] = useState();
+
   useEffect(() => {
-    axios.get('/data/examples.json')
+    // axios.get('/data/examples.json')
+    axios.get('/data/kitsData.json')
       .then((response) => (setProjectSlides(response.data)))
       .catch((error) => (console.log(`Error getting examples.json${error}`)));
   }, []);
@@ -21,21 +23,21 @@ const Home = () => {
       <div className='page-header'>
         <h1>Welcome Maker!</h1>
       </div>
-      {/* <div className='home-carousel'>
+      <div className='home-carousel'>
         <div className='home-carousel-header'>
-          <h2>See projects from the internet!</h2>
+          <h2>Check out the available kits!</h2>
         </div>
         {
           projectSlides ?
           <Carousel slides={projectSlides} /> : null
         }
-      </div> */}
+      </div>
 
       {/* <div className='home-panel-header'>
         <h2>Explore site for more content!</h2>
       </div> */}
 
-      <div className="home-panel">
+      {/* <div className="home-panel">
         <div className="home-panel-item">
           <h2>KITS</h2>
           <div className="home-panel-img">
@@ -52,7 +54,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </div>
   )
