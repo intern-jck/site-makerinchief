@@ -59,7 +59,8 @@ const Carousel = ({slides}) => {
                   className='carousel-indicator'
                   key={index}
                   name={index}
-                  onClick={updateCurrentImage}/>
+                  // onClick={updateCurrentImage}
+                />
               )
             })
           }

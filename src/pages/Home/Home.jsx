@@ -34,36 +34,12 @@ const Home = () => {
         <h2>Scroll through the kits available below and click the links above to see more!</h2>
       </div>
 
-
       <div className='home-carousel'>
         {
           slides ?
           <Carousel slides={slides} /> : null
         }
       </div>
-
-      {/* <div className='home-panel-header'>
-        <h2>Explore site for more content!</h2>
-      </div> */}
-
-      {/* <div className="home-panel">
-        <div className="home-panel-item">
-          <h2>KITS</h2>
-          <div className="home-panel-img">
-            <Link to='/kits'>
-              <img src={kitsImg} />
-            </Link>
-          </div>
-        </div>
-        <div className="home-panel-item">
-          <h2>RESOURCES</h2>
-          <div className="home-panel-img">
-            <Link to='/resources'>
-              <img src={resourcesImg} />
-            </Link>
-          </div>
-        </div>
-      </div> */}
 
     </div>
   )

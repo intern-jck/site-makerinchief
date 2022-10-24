@@ -109,10 +109,10 @@
     width: 100%;
   }
 
-.carousel-indicator {
-  width: 20px;
-  height: 20px;;
-}
+  .carousel-indicator {
+    width: 20px;
+    height: 20px;;
+  }
 }
 
 @media screen and (orientation:portrait) {
@@ -120,8 +120,8 @@
     width: 100%;
   }
 
-.carousel-indicator {
-  width: 16px;
-  height: 16px;;
-}
+  .carousel-indicator {
+    width: 16px;
+    height: 16px;;
+  }
 }
