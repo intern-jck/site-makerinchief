@@ -1,20 +1,5 @@
 .Carousel {
-  border: 4px solid black;
-  /* position: absolute; */
-  /* padding: 1em; */
-  position: relative;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* gap: 1em; */
-}
-
-.carousel-content {
-  border: 4px solid blue;
-  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -23,12 +8,8 @@
 }
 
 .carousel-body {
-  /* border: 4px solid blue; */
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,19 +17,17 @@
 }
 
 .carousel-body h4, h5 {
-  margin-top: 0;
+  margin-top: 2px;
   margin-bottom: 0;
 }
 
 .carousel-header {
-  /* border: 4px solid red; */
   font-size: x-large;
 }
 
 .carousel-img {
   border: 4px solid black;
-  /* width: fit-content; */
-  height: 80%;
+  height: 90%;
 }
 
 .carousel-img img {
@@ -58,27 +37,27 @@
 }
 
 .carousel-short {
-  /* border: 4px solid red; */
-
   width: fit-content;
-  font-size: large;
+  font-size: x-large;
 }
 
 .carousel-controls {
-  /* border: 4px solid red; */
-  position: absolute;
   width: 80%;
-  top: 48%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+.carousel-controls button {
+  background: none;
+  border: none;
+}
+
 .carousel-right-arrow {
   /* border: 4px solid green; */
   color: black;
-  margin-right: 1em;
+  /* margin-right: 1em; */
   margin-left: auto;
   display: flex;
   flex-direction: row;
@@ -87,10 +66,8 @@
 }
 
 .carousel-left-arrow {
-  /* border: 4px solid green; */
-  /* min-width: 3em; */
   color: black;
-  margin-left: 1em;
+  /* margin-left: 1em; */
   margin-right: auto;
   display: flex;
   flex-direction: row;
@@ -105,9 +82,7 @@
   transform: scale(1.2);
 }
 
-
 .carousel-indicator-div {
-  border: 4px solid green;
   margin:auto;
   width: 60%;
   display: flex;
@@ -118,18 +93,35 @@
 }
 
 .carousel-indicator {
-  /* border: 4px solid black; */
-  width: 1em;
-  height: 1em;;
+  border: 4px solid black;
+  width: 20px;
+  height: 20px;;
 }
 
 .carousel-indicator:hover {
+  cursor: pointer;
+  color: green;
   transform: scale(1.2);
-  background-color: green;
 }
 
 @media screen and (orientation:landscape) and (max-width: 1400px) {
+  .carousel-controls {
+    width: 100%;
+  }
+
+.carousel-indicator {
+  width: 20px;
+  height: 20px;;
+}
 }
 
 @media screen and (orientation:portrait) {
+  .carousel-controls {
+    width: 100%;
+  }
+
+.carousel-indicator {
+  width: 16px;
+  height: 16px;;
+}
 }

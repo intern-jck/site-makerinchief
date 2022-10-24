@@ -1,5 +1,6 @@
 .KitCard {
-  border: 4px solid black;
+  border: 8px solid black;
+  padding: 1em;
   width: 30vw;
   height: 30vw;
   display: flex;
@@ -10,19 +11,14 @@
 }
 
 .kit-card-name {
-  /* border: 4px solid blue; */
-  font-size: xx-large;
-  text-align: center;
   padding:0;
   margin:0;
+  font-size: xx-large;
 }
 
 .kit-card-img{
   border: 4px solid black;
-  width: 18vw;
-  height: 18vw;
-  padding:0;
-  margin:0;
+  height: 80%;
 }
 
 .kit-card-img img {
@@ -33,38 +29,37 @@
 }
 
 .kit-card-short {
-  /* border: 4px solid blue; */
   padding:0;
   margin:0;
-  height: 15%;
   font-size: x-large;
-  text-align: center;
 }
 
-@media screen and (orientation:landscape) and (max-width: 1024px){
+@media screen and (orientation:landscape) and (max-width: 1400px){
   .KitCard {
-    width: 44vw;
-    height: 44vw;
+    width: 40vw;
+    height: 40vw;
   }
-  .kit-card-img {
-    width: 25vw;
-    height: 25vw;
+
+  .kit-card-name {
+    font-size: x-large;
   }
+
   .kit-card-short {
-    height: 20%;
+    font-size: large;
   }
 }
 
 @media screen and (orientation:portrait) {
   .KitCard {
     width: 80vw;
-    height: 90vw;
+    height: 80vw;
   }
-  .kit-card-img {
-    width: 50vw;
-    height: 50vw;
+
+  .kit-card-name {
+    font-size: x-large;
   }
+
   .kit-card-short {
-    height: 25%;
+    font-size: large;
   }
 }

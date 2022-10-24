@@ -8,6 +8,13 @@ const Kits = () => {
   const [view, setView] = useState('');
   const [kits, setKits] = useState();
   const [kit, setKit] = useState();
+  const [tags, setTags] = useState();
+
+  useEffect(() => {
+    getKitsData();
+    getTechTags();
+    setView('Kit');
+  }, []);
 
   const getKitsData = () => {
     axios.get('data/kitsData.json')
@@ -18,10 +25,13 @@ const Kits = () => {
       .catch((error) => (console.log('Error fetching Kits:', error)));
   };
 
-  useEffect(() => {
-    getKitsData();
-    setView('List');
-  }, []);
+  const getTechTags = () => {
+    axios.get('data/techTags.json')
+      .then((response) => {
+        setTags(response.data);
+      })
+      .catch((error) => (console.log('Error fetching Tags:', error)));
+  };
 
   const viewKit = (event) => {
     event.preventDefault();
@@ -33,12 +43,8 @@ const Kits = () => {
     }
   };
 
-  const viewList = (event) => {
-    event.preventDefault();
-    const {name} = event.target;
-    if (name === 'List') {
-      setView('List');
-    };
+  const viewList = () => {
+    setView('List');
   };
 
   return (
@@ -46,10 +52,10 @@ const Kits = () => {
 
       <div className='page-header'>
         <h1>Kits</h1>
-        <h2>The kits below are meant to be educational kits for beginners learning programming and robotics.</h2>
-        <h2>The kits will be open source and parts available for download.</h2>
-        <h2>I will update this page once I have all the files tested and ready to go so stay tuned!</h2>
-        <h2>Also, full kits will be available for purchase soon!</h2>
+        {/* <h2>The kits below are meant to be educational kits for beginners learning programming and robotics.</h2> */}
+        {/* <h2>They</h2> */}
+        {/* <h2>I will update this page once I have all the files tested and ready to go so stay tuned!</h2> */}
+        {/* <h2>Also, full kits will be available for purchase soon!</h2> */}
       </div>
 
       <div className="kits-content">
@@ -63,10 +69,13 @@ const Kits = () => {
                 viewHandler={viewKit} />
             )) :
           view === 'Kit' && kit ?
-            <Kit
-              kit={kit}
-              viewHandler={viewList} /> :
-            null
+            <>
+              <button className='view-list-btn' onClick={viewList}>BACK TO KITS</button>
+              <Kit
+                kit={kit}
+                tags={tags} />
+            </> :
+          null
         }
       </div>
 

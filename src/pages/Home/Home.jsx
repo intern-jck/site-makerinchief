@@ -30,6 +30,8 @@ const Home = () => {
 
       <div className='page-header'>
         <h1>Welcome Maker!</h1>
+        {/* <h2>Makerinchief offers kits and resources so you can become a maker-in-chief too!</h2> */}
+        <h2>Scroll through the kits available below and click the links above to see more!</h2>
       </div>
 
 

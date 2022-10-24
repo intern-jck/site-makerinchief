@@ -7,30 +7,9 @@
         "youtube": "https://www.youtube.com/watch?v=hO762uOHBdM",
         "short": "Four wheeled drive bot",
         "info": [
-            "The tank bot uses an Arduino Nano to control the 4 wheels via an L298N motor driver.  Parts are easy to come by and quick to setup.  3D printed connectors and wooden dowels make a strong structure.  Cardboard parts are laser cut to ensure accuracy."
+            "The Tank Bot uses an Arduino Nano to control the 4 wheels via an L298N motor driver.  Parts are easy to come by and quick to setup.  3D printed connectors and wooden dowels make a strong structure.  Parts are 3D printed using recycled PLA and laser cut from cardboard and wooden dowels."
         ],
-        "tech": [
-            [
-                "Arduino Nano",
-                "https://www.arduino.cc/"
-            ],
-            [
-                "NRF24l01",
-                "#"
-            ],
-            [
-                "L298N",
-                "#"
-            ],
-            [
-                "3D Printing",
-                "#"
-            ],
-            [
-                "Laser Cutting",
-                "#"
-            ]
-        ],
+        "tech": ["arduino", "nrf24l01", "3d-printing", "laser-cutting", "l298n"],
         "photos": [
             "https://iili.io/iAAp5B.jpg",
             "https://iili.io/iAAmJV.jpg",
@@ -50,28 +29,7 @@
         "info": [
             "The Controller Bot uses two joystick modules to control your bot using an NRF24L01 radio module.  An 16x2 LCD screen displays any data you want.  Parts are 3D printed using recycled PLA and laser cut from cardboard and wooden dowels."
         ],
-        "tech": [
-            [
-                "Arduino Nano",
-                "https://www.arduino.cc/"
-            ],
-            [
-                "NRF24l01",
-                "#"
-            ],
-            [
-                "LCD",
-                "#"
-            ],
-            [
-                "3D Printing",
-                "#"
-            ],
-            [
-                "Laser Cutting",
-                "#"
-            ]
-        ],
+        "tech": ["arduino", "nrf24l01", "3d-printing", "laser-cutting", "lcd"],
         "photos": [
             "https://iili.io/iARFqJ.jpg",
             "https://iili.io/iARK0v.jpg",
@@ -89,26 +47,9 @@
         "youtube": "#",
         "short": "WS2812B RGB LED Lantern",
         "info": [
-            "The lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors.  Printer paper is used as a simple diffuser which also allows printing images on each side allowing for very intersting visual effects!"
+            "The LED Lantern is laser cut from birch plywood and uses WS2812b LEDs to allow a wide range of colors.  Printer paper is used as a simple diffuser which also allows printing images on each side allowing for awesome visual effects!"
         ],
-        "tech": [
-            [
-                "Arduino Nano",
-                "https://www.arduino.cc/"
-            ],
-            [
-                "NRF24l01",
-                "#"
-            ],
-            [
-                "WS2812b",
-                "#"
-            ],
-            [
-                "Laser Cutting",
-                "#"
-            ]
-        ],
+        "tech": ["arduino", "nrf24l01", "ws2812b", "laser-cutting"],
         "photos": [
             "https://iili.io/iAR62R.png",
             "https://iili.io/iARP7p.png",
@@ -129,24 +70,7 @@
         "info": [
             "The Doggo Bot uses a simple leg mechanism and 4 servos controlled by an Arduino Nano to allow the bot to walk forward and backwards.  There is plenty of room to attach sensors and devices to let the bot detect objects and even be remote controlled!"
         ],
-        "tech": [
-            [
-                "Arduino Nano",
-                "https://www.arduino.cc/"
-            ],
-            [
-                "Servo Motors",
-                "#"
-            ],
-            [
-                "3D Printing",
-                "#"
-            ],
-            [
-                "Laser Cutting",
-                "#"
-            ]
-        ],
+        "tech": ["arduino", "servo-motors", "3d-printing", "laser-cutting"],
         "photos": [
             "https://iili.io/iAR5g4.jpg",
             "https://iili.io/iARR1f.jpg",
@@ -164,26 +88,9 @@
         "youtube": "#",
         "short": "Servo powered robot arm",
         "info": [
-            "Arm Bot uses a combination of servos and 3D printed parts to allow the arm to grip small objects and perform simple movements.  The bot is simple to control using three potentiometers are used to control base, elbow and gripper of the arm.  ."
+            "Arm Bot uses a combination of servos and 3D printed parts to allow the arm to grip small objects and perform simple movements.  The bot is simple to control and uses three potentiometers to control base, elbow and gripper."
         ],
-        "tech": [
-            [
-                "Arduino Nano",
-                "https://www.arduino.cc/"
-            ],
-            [
-                "Servo Motors",
-                "#"
-            ],
-            [
-                "3D Prining",
-                "#"
-            ],
-            [
-                "Laser Cutting",
-                "#"
-            ]
-        ],
+        "tech": ["arduino", "servo-motors", "3d-printing", "laser-cutting"],
         "photos": [
             "https://iili.io/iARVqb.jpg",
             "https://iili.io/iARGLu.jpg",
@@ -201,26 +108,9 @@
         "youtube": "#",
         "short": "A 7 segment WS2812b display",
         "info": [
-            "The Digit Display is a fun LED project meant to a great start to learn soldering and programming control of LEDs.  The LEDs can be programmed to display any single digit number and in a wide range of colors.  The displays can also be chained together to create larger displays."
+            "The Digit Display is a fun LED project meant to be a great start to learn soldering and programming control of LEDs.  The LEDs can be programmed to display any single digit number and in a wide range of colors.  The displays can also be chained together to create larger displays."
         ],
-        "tech": [
-            [
-                "Arduino Nano",
-                "https://www.arduino.cc/"
-            ],
-            [
-                "PCB",
-                "#"
-            ],
-            [
-                "WS2812b",
-                "#"
-            ],
-            [
-                "3D Printing",
-                "#"
-            ]
-        ],
+        "tech": ["arduino", "pcb", "ws2812b", "3d-printing"],
         "photos": [
             "https://iili.io/iA5Jv2.png",
             "https://iili.io/iA5HYl.png",
