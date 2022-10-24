@@ -29,57 +29,54 @@ const Carousel = ({slides}) => {
   return (
 
     <div className="Carousel">
-      <div className='carousel-content'>
-        <div className='carousel-body'>
-          <div className='carousel-header'>
-            {slides[current].header}
-          </div>
-          <div className='carousel-img'>
-            <a href={slides[current].url} target='_blank'>
-              <img
-                hidden={false}
-                src={slides[current].img} />
-            </a>
-          </div>
-          <div className='carousel-short'>
-            {slides[current].short}
-          </div>
-        </div>
 
-        <div className='carousel-controls'>
-          <div className="carousel-left-arrow">
-            {
-            <FaChevronLeft
-              onClick={prevSlide}
-              size={80}/>
-            }
-          </div>
-          <div className="carousel-right-arrow">
-            {
-            <FaChevronRight
-              onClick={nextSlide}
-              size={80}/>
-            }
-          </div>
+      <div className='carousel-body'>
+        <div className='carousel-header'>
+          <h4>{slides[current].header}</h4>
         </div>
-
-        {/* <div className="carousel-indicator-div">
-          {
-            images ? images.map((slide, index) => {
-              return (
-                <div
-                  className="carousel-indicator"
-                  key={index}
-                  name={index}
-                  onClick={updateCurrentImage}/>
-                )
-              })
-            : null
-          }
-        </div> */}
+        <div className='carousel-short'>
+          <h5><i>{slides[current].short}</i></h5>
+        </div>
+        <div className='carousel-img'>
+          <a href={slides[current].url} target='_blank'>
+            <img
+              hidden={false}
+              src={slides[current].img} />
+          </a>
+        </div>
       </div>
 
-
+      <div className='carousel-controls'>
+        <div className="carousel-left-arrow">
+          {
+          <FaChevronLeft
+            onClick={prevSlide}
+            size={60}/>
+          }
+        </div>
+        <div className="carousel-right-arrow">
+          {
+          <FaChevronRight
+            onClick={nextSlide}
+            size={60}/>
+          }
+        </div>
+      </div>
+{/*
+      <div className="carousel-indicator-div">
+        {
+          images ? images.map((slide, index) => {
+            return (
+              <div
+                className="carousel-indicator"
+                key={index}
+                name={index}
+                onClick={updateCurrentImage}/>
+              )
+            })
+          : null
+        }
+      </div> */}
 
     </div>
   );
