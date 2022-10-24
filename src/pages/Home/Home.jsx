@@ -8,12 +8,23 @@ const kitsImg = 'https://iili.io/sbJOmu.jpg';
 const resourcesImg = 'https://iili.io/sbJw79.png';
 
 const Home = () => {
-  const [projectSlides, setProjectSlides] = useState();
+  const [slides, setSlides] = useState();
 
   useEffect(() => {
     // axios.get('/data/examples.json')
     axios.get('/data/kitsData.json')
-      .then((response) => (setProjectSlides(response.data)))
+      .then((response) => {
+        console.log(response.data)
+        const slidesForCarousel = response.data.map((kit) => {
+          return {
+            'header': kit.name,
+            'short': kit.short,
+            'img': kit.photos[0],
+          }
+        });
+        console.log(slidesForCarousel)
+        setSlides(slidesForCarousel);
+      })
       .catch((error) => (console.log(`Error getting examples.json${error}`)));
   }, []);
 
@@ -23,15 +34,17 @@ const Home = () => {
       <div className='page-header'>
         <h1>Welcome Maker!</h1>
       </div>
-      <div className='home-carousel'>
+
+      {
+        slides ?
+        <Carousel slides={slides} /> : null
+      }
+
+      {/* <div className='home-carousel'>
         <div className='home-carousel-header'>
           <h2>Check out the available kits!</h2>
         </div>
-        {
-          projectSlides ?
-          <Carousel slides={projectSlides} /> : null
-        }
-      </div>
+      </div> */}
 
       {/* <div className='home-panel-header'>
         <h2>Explore site for more content!</h2>

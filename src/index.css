@@ -1,10 +1,13 @@
 /* For page wide styling */
 :root {
-  --nav-margin: 12vh;
+  --nav-margin: 10vh;
   --background-color: white;
   --primary-color:  black;
   --secondary-color: blue;
   --active-color: green;
+
+  /* Screen sizes */
+  --medium-screen-break: 1400px;
 }
 
 /* Base */
@@ -55,7 +58,7 @@ ul {
   text-align: center;
 }
 
-@media screen and (orientation:landscape) and (max-width: 1400px){
+@media screen and (orientation:landscape) and (max-width: var(--medium-screen-break)){
 }
 
 @media screen and (orientation:portrait) {
