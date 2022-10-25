@@ -5,17 +5,17 @@ import './Resources.css';
 const Resources = () => {
   const [resources, setResources] = useState();
 
+  useEffect(() => {
+    getResourcesData();
+  }, []);
+
   const getResourcesData = () => {
     axios.get('data/resources.json')
       .then((response) => {
         setResources(response.data);
-        console.log(response.data)
       })
       .catch((error) => (console.log('Error fetching Resources:', error)));
   };
-  useEffect(() => {
-    getResourcesData();
-  }, []);
 
   return (
     <div className="Resources">
@@ -25,10 +25,8 @@ const Resources = () => {
         <h2>Below are sites for tutorials, parts and videos to learn everything you need to know!</h2>
       </div>
       <div className='resources-content'>
-
         {
           resources ?
-          // <h2>resources</h2> :
           resources.map((resource, i) => {
             return (
               <div key ={i} className='resource-item'>
@@ -44,7 +42,6 @@ const Resources = () => {
           }) :
           null
         }
-
       </div>
     </div>
   )

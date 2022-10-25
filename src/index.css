@@ -58,6 +58,10 @@ ul {
   text-align: center;
 }
 
+.active {
+  color: var(--active-color);
+}
+
 @media screen and (orientation:landscape) and (max-width: var(--medium-screen-break)){
 }
 

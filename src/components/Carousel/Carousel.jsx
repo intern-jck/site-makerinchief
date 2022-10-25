@@ -25,6 +25,11 @@ const Carousel = ({slides}) => {
     <div className='Carousel'>
 
       <div className='carousel-body'>
+        <div className='carousel-img'>
+            <img
+              hidden={false}
+              src={slides[slideIndex].img} />
+        </div>
         <div className='carousel-header'>
           {
             slides[slideIndex].header ?
@@ -36,11 +41,6 @@ const Carousel = ({slides}) => {
             slides[slideIndex].short ?
               <h5><i>{slides[slideIndex].short}</i></h5> : null
           }
-        </div>
-        <div className='carousel-img'>
-            <img
-              hidden={false}
-              src={slides[slideIndex].img} />
         </div>
       </div>
 
@@ -56,7 +56,7 @@ const Carousel = ({slides}) => {
             slides.map((slide, index) => {
               return (
                 <div
-                  className='carousel-indicator'
+                  className={`carousel-indicator ${index === slideIndex ? 'current-indicator' : null}`}
                   key={index}
                   name={index}
                   // onClick={updateCurrentImage}
