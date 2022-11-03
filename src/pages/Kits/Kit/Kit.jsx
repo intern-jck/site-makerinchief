@@ -1,5 +1,5 @@
 import React from 'react';
-import KitCarousel from './KitCarousel/KitCarousel.jsx';
+// import KitCarousel from './KitCarousel/KitCarousel.jsx';
 import Carousel from '../../../components/Carousel/Carousel.jsx';
 import KitInfo from './KitInfo/KitInfo.jsx';
 import './Kit.css';
